@@ -5,17 +5,25 @@ using UnityEngine.UI;
 
 public class enemeyHealth : MonoBehaviour
 {
-    [SerializeField] Enemy_Data enemyData;
+
+    Slider healthBar;
+    Enemy_Data playerHealth;
 
     private void Start()
     {
-        RectTransform rectTransform = GetComponent<RectTransform>();
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        enemyData = FindAnyObjectByType<Enemy_Data>();
+        healthBar = GetComponent<Slider>();
+        playerHealth = GameObject.FindAnyObjectByType<Enemy_Data>();
+        healthBar.maxValue = playerHealth.maxHealth;
+        healthBar.value = playerHealth.Health;
 
-        
     }
+    private void Update()
+    {
+        SetHealth(playerHealth.Health);
+    }
+    public void SetHealth(float hp)
+    {
+        healthBar.value = hp;
+    }
+
 }
