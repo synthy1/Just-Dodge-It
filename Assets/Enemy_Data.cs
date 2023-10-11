@@ -22,6 +22,8 @@ public class Enemy_Data : MonoBehaviour
         {
             Health -= 25f;
             //play sfx
+
+            //play partical effect
             Destroy(collision.gameObject);
         }
     }
