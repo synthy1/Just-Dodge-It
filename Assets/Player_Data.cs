@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Player_Data : MonoBehaviour
 {
@@ -12,13 +13,18 @@ public class Player_Data : MonoBehaviour
 
 
     [Header("refrences")]
-    float fri = 100f;
+    ActionBasedContinuousMoveProvider pMovement;
+    XRGrabInteractable currentBall;
+    XRController Lcont;
+    XRController Rcont;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Lcont = GameObject.Find("Left Controller").GetComponent<XRController>();
+        Rcont = GameObject.Find("Right Controller").GetComponent<XRController>();
     }
 
     // Update is called once per frame
@@ -26,4 +32,13 @@ public class Player_Data : MonoBehaviour
     {
         
     }
+
+    /*private void ballThrowPower()
+    {
+        currentBall = gameObject;
+        if(currentBall != null)
+        {
+            currentBall.throwVelocityScale = throwPower;
+        }
+    }*/
 }
