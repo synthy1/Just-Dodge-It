@@ -13,32 +13,27 @@ public class Player_Data : MonoBehaviour
 
 
     [Header("refrences")]
-    ActionBasedContinuousMoveProvider pMovement;
+    [SerializeField]ActionBasedContinuousMoveProvider pMovement;
     XRGrabInteractable currentBall;
-    XRController Lcont;
-    XRController Rcont;
 
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        Lcont = GameObject.Find("Left Controller").GetComponent<XRController>();
-        Rcont = GameObject.Find("Right Controller").GetComponent<XRController>();
-    }
 
     // Update is called once per frame
     void Update()
     {
-        
+        pMovement.moveSpeed = moveSpeed;
+        ballThrowPower();
     }
 
-    /*private void ballThrowPower()
+    public void OnSelectEnter(SelectEnterEventArgs args)
     {
-        currentBall = gameObject;
+        currentBall = (XRGrabInteractable)args.interactableObject;
+    }
+
+    private void ballThrowPower()
+    {
         if(currentBall != null)
         {
             currentBall.throwVelocityScale = throwPower;
         }
-    }*/
+    }
 }

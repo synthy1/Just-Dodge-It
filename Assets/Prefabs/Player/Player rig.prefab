@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 2767285626215277182}
   - component: {fileID: 9188333064632718079}
   - component: {fileID: 1688831960060311545}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: wrist health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1058769617452529675}
   - component: {fileID: 7144710514643784498}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,7 +393,7 @@ GameObject:
   - component: {fileID: 1620223464632765138}
   - component: {fileID: 4459135638761936225}
   - component: {fileID: 2215209783600397904}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -725,7 +725,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8523846754428015868}
+        m_TargetAssemblyTypeName: Player_Data, Assembly-CSharp
+        m_MethodName: OnSelectEnter
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -1278,7 +1290,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8523846754428015868}
+        m_TargetAssemblyTypeName: Player_Data, Assembly-CSharp
+        m_MethodName: OnSelectEnter
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -1402,7 +1426,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6762150007576194513}
   - component: {fileID: 1183249878646368437}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1723,6 +1747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  Health: 0
+  Health: 100
   throwPower: 5
   moveSpeed: 10
+  pMovement: {fileID: 6965140620646122403}
