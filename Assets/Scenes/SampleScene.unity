@@ -967,14 +967,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1688831960060311545, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_BlockingObjects
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767285626215277182, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4017003170309164105, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -983,37 +975,9 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 611100193}
-    - target: {fileID: 6056203234634236151, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_PositionInput.m_Action.m_Id
-      value: 7f0a0be9-f977-43ab-b59e-28e922b143c5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6056203234634236151, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_RotationInput.m_Action.m_Id
-      value: 4276d3b3-f22f-4501-8bb3-753c3de87913
-      objectReference: {fileID: 0}
-    - target: {fileID: 6056203234634236151, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_PositionInput.m_Action.m_Name
-      value: Position Input
-      objectReference: {fileID: 0}
-    - target: {fileID: 6056203234634236151, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_RotationInput.m_Action.m_Name
-      value: Rotation Input
-      objectReference: {fileID: 0}
-    - target: {fileID: 8523846754428015868, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8644640586963375008, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
       propertyPath: m_Name
       value: Player rig
-      objectReference: {fileID: 0}
-    - target: {fileID: 8675390712371525993, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.167
-      objectReference: {fileID: 0}
-    - target: {fileID: 8894831427766640157, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.168
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

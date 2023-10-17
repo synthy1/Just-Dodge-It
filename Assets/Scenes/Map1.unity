@@ -455,54 +455,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1688831960060311545, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_BlockingObjects
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2031472430852105626, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2746051486892488420, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.081
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767285626215277182, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767285626215277182, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3168687780197543957, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4017003170309164105, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_ImproveAccuracyWithSphereCollider
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4017003170309164105, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4017003170309164105, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4017003170309164105, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4275203728491017469, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6516332877050411740, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8644640586963375008, guid: 1513c19a361148b47bc51674e879fa1d, type: 3}
       propertyPath: m_Name
       value: Player rig
@@ -1871,6 +1823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2414200584055419805}
   - component: {fileID: 1598546105428540472}
+  - component: {fileID: 3588201768354711796}
   - component: {fileID: 3588201768354711794}
   - component: {fileID: 3588201768354711795}
   m_Layer: 0
@@ -2151,7 +2104,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f3ce8e0a64b9845b332cb17b4da1cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dodgeBall: {fileID: 0}
+  dodgeBall: {fileID: 8197521299494162666, guid: d4ff44dabbf27ea42a5c05bcbbdd4599, type: 3}
+--- !u!64 &3588201768354711796
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3083600217872378151}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5816953587826817030, guid: ac1969334e154924ebd8090b86bf9776, type: 3}
 --- !u!33 &3708716083302869980
 MeshFilter:
   m_ObjectHideFlags: 0
