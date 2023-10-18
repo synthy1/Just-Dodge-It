@@ -5,7 +5,7 @@ using UnityEngine;
 public class ballThrower : MonoBehaviour
 {
 
-    GameObject[] balls;
+    [SerializeField]GameObject[] balls;
     public GameObject dodgeBall;
     // Start is called before the first frame update
     void Start()
@@ -18,9 +18,9 @@ public class ballThrower : MonoBehaviour
     {
         balls = GameObject.FindGameObjectsWithTag("Ball");
 
-        if (balls.Length > 6)
+        if (balls.Length < 6)
         {
-            Instantiate(dodgeBall);
+            Instantiate(dodgeBall, gameObject.transform.position,gameObject.transform.rotation);
         }
     }
 }
