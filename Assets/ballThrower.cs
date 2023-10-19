@@ -20,7 +20,7 @@ public class ballThrower : MonoBehaviour
 
         if (balls.Length < 6)
         {
-            Instantiate(dodgeBall, gameObject.transform.position,gameObject.transform.rotation);
+            Instantiate(dodgeBall, gameObject.transform.position, gameObject.transform.rotation).GetComponent<Rigidbody>().AddForce((Vector3.forward + Vector3.up) * 5f, ForceMode.Impulse);
         }
     }
 }
