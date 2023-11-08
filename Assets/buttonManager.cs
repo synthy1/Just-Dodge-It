@@ -1,19 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class buttonManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void opentornys()
     {
-        
+        Debug.Log("jkhnergjkhnfdgjkn");
     }
 
-    // Update is called once per frame
-    /*void Update()
+    public void TornyOne()
     {
-        if(showbut)
-    }*/
+        SceneManager.LoadScene(1);
+    } 
+    public void TornyTwo()
+    {
+        SceneManager.LoadScene(2);
+    }
+    public void TornyTrain()
+    {
+        SceneManager.LoadScene(3);
+    }
 }

@@ -8,8 +8,8 @@ public class Enemy_Data : MonoBehaviour
     [Header("Stats")]
     [SerializeField] public float maxHealth = 100f;
     [SerializeField] public float Health;
-    [SerializeField] float throwPower = 5f;
-    [SerializeField] float moveSpeed = 10f;
+    [SerializeField] public float throwPower = 5f;
+    [SerializeField] public float moveSpeed = 10f;
 
 
     private void Start()
